@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              app:layout_behavior="@string/appbar_scrolling_view_behavior"
+              tools:context="com.tukki.tukki.activity.MainActivity"
+              android:orientation="vertical"
+              tools:showIn="@layout/app_bar_main"
+              android:elevation="24dp">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:gravity="center_vertical" android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+            <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" app:srcCompat="@drawable/ic_person_pin_black_24dp"
+                    android:id="@+id/imageView3"
+                    android:tint="@color/colorAccent"/>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_marginRight="20dp"
+                    android:layout_marginLeft="15dp">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" android:gravity="center_vertical">
+                    <TextView
+                            android:text="Aby Ngom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/textView2"
+                            android:textColor="#4f4f67" android:textStyle="bold" android:textSize="20sp"
+                            android:layout_weight="1"/>
+                    <ImageButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp" app:srcCompat="@drawable/params"
+                            android:id="@+id/imageButton" android:adjustViewBounds="false" android:scaleType="fitCenter"
+                            android:backgroundTint="@color/colorPrimary"/>
+                </LinearLayout>
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:inputType="none"
+                        android:text="3 réservations en cours ..."
+                        android:ems="10"
+                        android:id="@+id/editText" android:background="@drawable/gray_text_field"
+                        android:paddingLeft="10dp" android:textSize="14sp" android:textColor="#737373"
+                        android:cursorVisible="false" android:contextClickable="false"/>
+            </LinearLayout>
+        </LinearLayout>
+        <android.support.design.widget.BottomNavigationView
+                android:id="@+id/bottom_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="false"
+                app:itemIconTint="#fff"
+                app:itemTextColor="#fff"
+                app:menu="@menu/bottom_navigation_main" android:layout_marginTop="10dp" app:elevation="4dp"
+                android:background="@color/colorAccentTrans"/>
+        <FrameLayout
+                android:id="@+id/frame_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:animateLayoutChanges="true">
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

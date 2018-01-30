@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+   % <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_collections_bookmark_black_24dp"
+            android:title="Mes reservations" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_book_black_24dp"
+            android:title="Ticket" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_account_box_black_24dp"
+            android:title="Mon compte" />
+    </group>
+
+    <item android:title="Autre">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="Parametres" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_live_help_black_24dp"
+                android:title="AIde" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+            android:id="@+id/int_nav_booking"
+            android:enabled="true"
+            android:icon="@drawable/ic_local_hotel_black_24dp"
+            android:title="Reservation"
+            app:showAsAction="always" />
+    <item
+            android:id="@+id/int_nav_history"
+            android:enabled="true"
+            android:icon="@drawable/ic_collections_bookmark_black_24dp"
+            android:title="Mes Reservations"
+            app:showAsAction="always" />
+    <item
+            android:id="@+id/int_nav_past"
+            android:enabled="true"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="Historique"
+            app:showAsAction="always"/>
+    <item
+            android:id="@+id/int_nav_profile"
+            android:enabled="true"
+            android:icon="@drawable/ic_person_pin_circle_black_24dp"
+            android:title="Profil"
+            app:showAsAction="ifRoom"/>
+</menu>

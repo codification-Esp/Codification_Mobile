@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="client_id"></string>
+    <string name="client_secret"></string>
+    <string name="host">http://192.168.43.143:4356</string>
+</resources>
