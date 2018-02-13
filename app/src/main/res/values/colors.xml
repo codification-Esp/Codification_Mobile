@@ -2,8 +2,8 @@
 <resources>
     <color name="colorPrimary">@android:color/transparent</color>
     <color name="colorPrimaryDark">@android:color/transparent</color>
-    <color name="colorAccent">#4f4f67</color>
-    <color name="colorAccentTrans">#764f4f67</color>
+    <color name="colorAccent">#d074de</color>
+    <color name="colorAccentTrans">#d074de</color>
     <color name="black_alpha_40">#5a000000</color>
     <color name="light_gray">#eeeeee</color>
 </resources>

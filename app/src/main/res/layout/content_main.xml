@@ -5,74 +5,103 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               app:layout_behavior="@string/appbar_scrolling_view_behavior"
-              tools:context="com.tukki.tukki.activity.MainActivity"
-              android:orientation="vertical"
-              tools:showIn="@layout/app_bar_main"
+              tools:context="com.aby.roomforall.activity.MainActivity"
+    tools:showIn="@layout/app_bar_main"
               android:elevation="24dp">
 
     <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
         <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:gravity="center_vertical" android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
             <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp" app:srcCompat="@drawable/ic_person_pin_black_24dp"
-                    android:id="@+id/imageView3"
-                    android:tint="@color/colorAccent"/>
+                android:id="@+id/imageView3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:elevation="5dp"
+                app:srcCompat="@drawable/me" />
+
             <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:layout_marginRight="20dp"
-                    android:layout_marginLeft="15dp">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
                 <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" android:gravity="center_vertical">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
                     <TextView
-                            android:text="Aby Ngom"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" android:id="@+id/textView2"
-                            android:textColor="#4f4f67" android:textStyle="bold" android:textSize="20sp"
-                            android:layout_weight="1"/>
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Aby Ngom"
+                        android:textColor="#4f4f67"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
                     <ImageButton
-                            android:layout_width="40dp"
-                            android:layout_height="40dp" app:srcCompat="@drawable/params"
-                            android:id="@+id/imageButton" android:adjustViewBounds="false" android:scaleType="fitCenter"
-                            android:backgroundTint="@color/colorPrimary"/>
+                        android:id="@+id/imageButton"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:adjustViewBounds="false"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/params" />
                 </LinearLayout>
+
                 <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="35dp"
-                        android:inputType="none"
-                        android:text="3 réservations en cours ..."
-                        android:ems="10"
-                        android:id="@+id/editText" android:background="@drawable/gray_text_field"
-                        android:paddingLeft="10dp" android:textSize="14sp" android:textColor="#737373"
-                        android:cursorVisible="false" android:contextClickable="false"/>
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/gray_text_field"
+                    android:contextClickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:inputType="none"
+                    android:paddingLeft="10dp"
+                    android:text="3 réservations en cours ..."
+                    android:textColor="#737373"
+                    android:textSize="14sp" />
             </LinearLayout>
         </LinearLayout>
-        <android.support.design.widget.BottomNavigationView
-                android:id="@+id/bottom_navigation"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_alignParentBottom="false"
-                app:itemIconTint="#fff"
-                app:itemTextColor="#fff"
-                app:menu="@menu/bottom_navigation_main" android:layout_marginTop="10dp" app:elevation="4dp"
-                android:background="@color/colorAccentTrans"/>
+
         <FrameLayout
-                android:id="@+id/frame_layout"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:animateLayoutChanges="true">
+            android:id="@+id/frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true">
 
         </FrameLayout>
+
     </LinearLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorAccentTrans"
+        app:elevation="4dp"
+        app:itemIconTint="#fff"
+        app:itemTextColor="#fff"
+        app:menu="@menu/bottom_navigation_main" />
 
 
 </RelativeLayout>
